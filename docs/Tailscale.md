@@ -34,3 +34,9 @@ tailscale up --advertise-routes=192.168.5.0/24
 - on device with the `subnet` propery, select `...`, then **Edit route settings**.
 - Under **Subnet routes**, select the routes to approve, then select **Save**.
 
+## Add split DNS to resolve local names
+- In tailscape, click **DNS** on the left menu
+- Click **Add a nameserver**, **Custom...**
+- Add local DNS `192.168.5.1`, click **Restrict to domain**, `lan` for domain (or as it is defined in local DNS).
+- Not it is possible can ping `localmachine.lan`
+
